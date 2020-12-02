@@ -28,6 +28,19 @@
         <br>
         <br> 
 
+        <form>
+            <input type="checkbox" class="city" id="cAll" name="All City" value="All" onclick="city()">
+            <label for="cAll"> (All) </label><br>
+            <input type="checkbox" class="city" id="cIbadan" name="Ibadan" value="Ibadan" onclick="city()">
+            <label for="cIbadan"> Ibadan </label><br>
+            <input type="checkbox" class="city" id="cOthers" name="Others" value="Others" onclick="city()">
+            <label for="cOthers"> Others </label>
+            <input type="checkbox" class="city" id="cOthers" onclick="vizFilter('Category', 'Office Supplies', 'REPLACE')">Office Supplies</input>
+            
+    
+    
+        </form>
+
         <div id="vizContainer"></div>
         <!-- This houses the visualization -->
 
