@@ -5,10 +5,12 @@ var workbook;
 var activeSheet;
 
 function initViz() {
+    
     var containerDiv = document.getElementById("vizContainer"),
         // url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/BubbleChart",
         // url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/Bar",
-        url = "https://public.tableau.com/views/testingdashboard_16069128488460/BainwithSSD",
+        // url = "https://public.tableau.com/views/testingdashboard_16069128488460/BainwithSSD",
+        url = "https://lumpy-decorous-ixia.glitch.me",
         options = {
             hideTabs: true,
             onFirstInteractive: function ()
