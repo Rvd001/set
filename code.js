@@ -131,8 +131,8 @@ function westFilter(){
 function eastFilter(){
 
     activeSheet.applyFilterAsync(
-        "Region",
-        "East",
+        "Category",
+        "Office Supplies",
         tableau.FilterUpdateType.REPLACE
     )
 };
