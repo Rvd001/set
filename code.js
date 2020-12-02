@@ -37,6 +37,61 @@ function vizResize() {
 }
 
 
+
+
+//Filters
+//wEST Filter
+//Promise should be used here
+
+function westFilter(){
+    // workbook.activateSheetAsync("Bar Chart");
+    activeSheet.applyFilterAsync(
+        "Category",
+        "Furniture",
+        tableau.FilterUpdateType.REPLACE
+    );
+};
+
+
+
+//EAST Filter
+
+function eastFilter(){
+
+    activeSheet.applyFilterAsync(
+        "Category",
+        "Office Supplies",
+        tableau.FilterUpdateType.REPLACE
+    )
+};
+
+
+
+
+//SOUTH Filter
+
+function southFilter(){
+   
+    activeSheet.applyFilterAsync(
+        'Category',
+        'Technology',
+        tableau.FilterUpdateType.ADD
+    )
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //Original Size
 
 function originalSize() {
@@ -113,45 +168,6 @@ function boxAndWhisker(){
 };
 
 
-//Filters
-//wEST Filter
-//Promise should be used here
-
-function westFilter(){
-    // workbook.activateSheetAsync("Bar Chart");
-    activeSheet.applyFilterAsync(
-        "Category",
-        "Furniture",
-        tableau.FilterUpdateType.REPLACE
-    );
-};
-
-
-
-//EAST Filter
-
-function eastFilter(){
-
-    activeSheet.applyFilterAsync(
-        "Category",
-        "Office Supplies",
-        tableau.FilterUpdateType.REPLACE
-    )
-};
-
-
-
-
-//SOUTH Filter
-
-function southFilter(){
-   
-    activeSheet.applyFilterAsync(
-        'Category',
-        'Technology',
-        tableau.FilterUpdateType.ADD
-    )
-};
 
 
 
