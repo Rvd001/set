@@ -7,7 +7,8 @@ var activeSheet;
 function initViz() {
     var containerDiv = document.getElementById("vizContainer"),
         // url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/BubbleChart",
-        url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/Bar",
+        // url = "https://public.tableau.com/views/JavaScriptProjectWorkbook/Bar",
+        url = "https://public.tableau.com/views/testingdashboard_16069128488460/BainwithSSD",
         options = {
             hideTabs: true,
             onFirstInteractive: function ()
@@ -117,8 +118,8 @@ function boxAndWhisker(){
 function westFilter(){
     // workbook.activateSheetAsync("Bar Chart");
     activeSheet.applyFilterAsync(
-        "Region",
-        "West",
+        "Category",
+        "Furniture",
         tableau.FilterUpdateType.REPLACE
     );
 };
@@ -144,8 +145,8 @@ function eastFilter(){
 function southFilter(){
    
     activeSheet.applyFilterAsync(
-        'Region',
-        'South',
+        'Category',
+        'Technology',
         tableau.FilterUpdateType.ADD
     )
 };
