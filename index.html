@@ -42,6 +42,25 @@
     
         </form>
 
+<form action="">
+    <div class="multiselect"></div>
+        <div class="selectBox" onclick="showCheckboxes()">
+        <select>
+            <option >select a Category</option>
+        </select>
+        <div class="overSelect"></div>
+
+    </div>
+    <div id="checkBoxes">
+            <input type="checkbox" id="one" onclick="vizFilter('Category', 'Technology', 'REPLACE')">Tech</input>
+            <input type="checkbox" id="two" onclick="vizFilter('Category', 'Furniture', 'REPLACE')">Furnish</input>        
+
+    </div>
+
+</form>
+
+
+
         <div id="vizContainer"></div>
         <!-- This houses the visualization -->
 
