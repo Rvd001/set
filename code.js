@@ -83,6 +83,11 @@ function southFilter(){
 
 
 
+function vizFilter(filterName,filterValue,filterType){
+   
+    activeSheet.applyFilterAsync(filterName,filterValue,filterType)
+};
+
 
 
 
